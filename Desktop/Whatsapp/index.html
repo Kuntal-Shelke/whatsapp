@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/425d493a84.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .header {
+            background-color: rgb(29, 27, 27);
+            height: 45px;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+        }
+        
+        #w-logo {
+            color: #19fd24;
+            margin-top: 7px;
+            margin-left: 13px;
+        }
+        
+        .left,
+        .right {
+            display: flex;
+        }
+        
+        .fa-minus,
+        .fa-regular,
+        .fa-xmark {
+            color: aliceblue;
+            margin-top: 14px;
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        
+        .fa-xmark:hover {
+            color: red;
+        }
+        
+        #main {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            height: 100vh;
+        }
+        
+        #left {
+            display: grid;
+            grid-template-columns: 12% 88%;
+            height: 100vh;
+        }
+        
+        #right {
+            background-color: aqua;
+        }
+        
+        .w-left {
+            background-color: rgb(29, 27, 27);
+        }
+        
+        .w-right {
+            background-color: blueviolet;
+        }
+        
+        #social {
+            color: rgb(216, 204, 204);
+            margin-left: 9px;
+            margin-top: 5px;
+            margin-bottom: 12px;
+            padding: 7px;
+        }
+        
+        #social:hover {
+            background-color: rgb(52, 54, 54);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <i class="fa fa-whatsapp fa-2x" id="w-logo"></i>
+            <p style="color: white;font-style:normal; margin-top: 13px; margin-left: 8px;font-size: 15px;"> Whatsapp</p>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-minus fa-1x"></i>
+            <i class="fa-duotone fa-regular fa-window-restore fa-1x"></i>
+            <i class="fa-solid fa-xmark fa-1x"></i>
+        </div>
+    </div>
+    <div id="main">
+        <div id="left">
+            <div class="w-left">
+                <div class="upper">
+                    <i class="fa-solid fa-bars fa-1x" id="social" style=" margin-top: 60px;"></i><br>
+                    <i class="fa-brands fa-rocketchat fa-1x" id="social"></i><br>
+                    <i class="fa-solid fa-phone fa-1x" id="social"></i><br>
+                    <i class="fa-solid fa-circle-notch fa-1x" id="social"></i>
+
+                </div>
+
+            </div>
+            <div class="w-right"></div>
+        </div>
+        <div id="right">
+
+        </div>
+    </div>
+</body>
+
+</html>
